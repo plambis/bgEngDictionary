@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<izpack:shortcuts version="5.0" xmlns:izpack="http://izpack.org/schema/shortcuts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://izpack.org/schema/shortcuts http://izpack.org/schema/5.0/izpack-shortcuts-5.0.xsd">
+
+	<skipIfNotSupported />
+
+	<programGroup defaultName="Bg Eng Dictionary" location="applications" />
+
+	<shortcut name="BgEng Dictionary" programGroup="yes" desktop="yes" applications="no" startMenu="no" startup="no"
+		commandLine="$INSTALL_PATH/bgEngDictionary.sh" initialState="noShow"
+		iconFile="$INSTALL_PATH/images/bulgaria.png" iconIndex="0" workingDirectory="$INSTALL_PATH" type="Application"
+		encoding="UTF-8" KdeSubstUID="false" createForAll="false" terminal="false" categories="Application;"
+		tryexec="$INSTALL_PATH/bgEngDictionary.sh" description="Dictionary">
+
+		<createForPack name="Dictionary" />
+	</shortcut>
+
+	<shortcut name="BgEng Dictionary Uninstaller" programGroup="yes" desktop="no" applications="no" startMenu="no"
+		startup="no" target="java" commandLine="-jar &quot;$INSTALL_PATH/Uninstaller/uninstaller.jar&quot;" initialState="noShow"
+		iconFile="trashcan_full" iconIndex="0" workingDirectory="" type="Application" encoding="UTF-8" KdeSubstUID="false"
+		createForAll="false" terminal="false" categories="Application;" tryexec="java -jar &quot;$INSTALL_PATH/Uninstaller/uninstaller.jar&quot;"
+		description="This uninstalls BgEng Dictionary">
+		<createForPack name="Dictionary" />
+	</shortcut>
+
+</izpack:shortcuts>

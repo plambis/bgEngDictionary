@@ -1,0 +1,111 @@
+
+<izpack:installation version="5.0" xmlns:izpack="http://izpack.org/schema/installation"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://izpack.org/schema/installation http://izpack.org/schema/5.0/izpack-installation-5.0.xsd">
+               <!--     The info section.   -->
+	<info>
+		<appname>bgEngDictionary</appname>
+		<appversion>0.2.0</appversion>
+		<authors>
+			<author name="plambis" email="plameniviv@gmail.com" />
+		</authors>
+		<!--url></url-->
+		<!-- pack200 /-->
+		<javaversion>1.8</javaversion>
+		<requiresjdk>no</requiresjdk>
+	</info>
+
+	<!--  The gui preferences indication.    -->
+	<guiprefs width="800" height="600" resizable="no" />
+
+	<!--       The locale section.   -->
+	<locale>
+		<langpack iso3="eng" />
+	</locale>
+
+	<!--      The resources section.    -->
+	<resources>
+		<res src="license.html" id="HTMLLicencePanel.licence" />
+		<res src="shortcutSpec.xml" id="shortcutSpec.xml" />
+		<res src="Unix_shortcutSpec.xml" id="Unix_shortcutSpec.xml" />
+	</resources>
+
+	<!--       The panels section.    -->
+	<panels>
+		<panel classname="HelloPanel" />
+		<!--panel classname="InfoPanel"/-->
+		<panel classname="HTMLLicencePanel" id="licensepanel" />
+		<panel classname="TargetPanel" />
+		<!--panel classname="PacksPanel"/-->
+		<panel classname="InstallPanel" />
+		<panel classname="ShortcutPanel" id="shortcutpanel" />
+		<panel classname="FinishPanel" id="finish"/>
+	</panels>
+
+	<!--  The packs section.      We specify here our packs.   -->
+	<packs>
+		<pack name="Dictionary" required="yes">
+			<description>Dictionary that helps to translate dual bg/eng words.</description>
+			<file src="license.html" targetdir="$INSTALL_PATH" />
+			<fileset dir="plambis" targetdir="$INSTALL_PATH/plambis">
+				<include name="**/*.*" />
+				<exclude name="**/.svn" />
+			</fileset>
+			<fileset dir="images" targetdir="$INSTALL_PATH/images">
+				<include name="**/*.*" />
+				<exclude name="**/.svn" />
+			</fileset>
+			<fileset dir="lib" targetdir="$INSTALL_PATH/lib">
+				<include name="**/*.*" />
+				<exclude name="**/.svn" />
+				<exclude name="org.eclipse.swt*.jar" />
+			</fileset>
+			
+			<!-- file src="../dict_win.jar" targetdir="$INSTALL_PATH">
+				<os family="windows" arch="x86"/>				
+			</file>
+			<file src="../lib/org.eclipse.swt.win32.win32.x86_4.2.jar" targetdir="$INSTALL_PATH/lib">
+				<os family="windows" arch="x86"/>				
+			</file-->
+			
+			<singlefile src="runDict.cmd" target="$INSTALL_PATH/bgEngDictionary.cmd">
+				<os family="windows" arch="amd64"/>				
+			</singlefile>
+			<fileset dir="lib" targetdir="$INSTALL_PATH/lib">
+				<include name="org.eclipse.swt.swt-win32-win32-x86_64*.jar" />
+				<os family="windows" arch="amd64"/>
+			</fileset>
+			
+			<file src="runDict.sh" targetdir="$INSTALL_PATH/bgEngDictionary.sh">
+				<os family="unix" arch="x86"/>				
+			</file>
+			<fileset dir="lib" targetdir="$INSTALL_PATH/lib">
+				<include name="org.eclipse.swt.gtk.linux.x86*.jar" />
+				<os family="unix" arch="x86"/>
+			</fileset>
+			<executable targetfile="$INSTALL_PATH/bgEngDictionary.sh" stage="never" failure="abort" keep="true">
+                 <os family="unix" arch="x86"/>
+            </executable>
+						
+			<singlefile src="runDict.sh" target="$INSTALL_PATH/bgEngDictionary.sh">
+				<os family="unix" arch="amd64"/>				
+			</singlefile>
+			<fileset dir="lib" targetdir="$INSTALL_PATH/lib">
+				<include name="org.eclipse.swt.gtk.linux.x86_64*.jar" />
+				<os family="unix" arch="amd64"/>
+			</fileset>
+			<executable targetfile="$INSTALL_PATH/bgEngDictionary.sh" stage="never" failure="ask" keep="true">
+                 <os family="unix" arch="amd64"/>
+            </executable>
+		</pack>
+	</packs>
+	<natives>
+		<!-- The native libraries to add -->
+		<native type="izpack" name="ShellLink.dll">
+			<os family="windows" />
+		</native>
+		<native type="izpack" name="ShellLink_x64.dll">
+			<os family="windows" />
+		</native>	
+	</natives>
+</izpack:installation>

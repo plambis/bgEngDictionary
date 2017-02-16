@@ -1,0 +1,42 @@
+2017-02-11 22:28:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where WORD like ucase(?)||'%' [42102-193]
+2017-02-11 22:28:43 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where id >= ? and id <= ? [42102-193]
+2017-02-11 22:28:43 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where WORD like ucase(?)||'%' [42102-193]
+2017-02-11 22:28:43 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where WORD=ucase(?) [42102-193]
+2017-02-11 22:28:43 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where WORD like ucase(?)||'%' [42102-193]
+2017-02-11 22:28:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS [42102-193]
+2017-02-11 22:28:43 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where id >= ? and id <= ? [42102-193]
+2017-02-11 22:41:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where WORD like ucase(?)||'%' [42102-193]
+2017-02-11 22:41:48 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where id >= ? and id <= ? [42102-193]
+2017-02-11 22:41:48 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where WORD like ucase(?)||'%' [42102-193]
+2017-02-11 22:41:48 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where WORD=ucase(?) [42102-193]
+2017-02-11 22:41:48 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where WORD like ucase(?)||'%' [42102-193]
+2017-02-11 22:41:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS [42102-193]
+2017-02-11 22:41:48 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORDS" not found; SQL statement:
+select * from WORDS where id >= ? and id <= ? [42102-193]

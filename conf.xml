@@ -1,0 +1,11 @@
+<preferences>
+   <interface>en</interface>
+   <translateEveryWord>true</translateEveryWord>
+   <fontName>Noto Sans</fontName>
+   <fontSize>9</fontSize>
+   <listWordNumber>20</listWordNumber>
+   <proxyServer></proxyServer>
+   <proxyPort></proxyPort>
+   <fromLanguage>ENGLISH</fromLanguage>
+   <toLanguage>BULGARIAN</toLanguage>
+</preferences>
