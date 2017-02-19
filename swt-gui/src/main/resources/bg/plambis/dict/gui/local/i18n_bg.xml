@@ -1,5 +1,5 @@
 <properties lang="bg">
-   <property key="DICT_VERSION">0.1.9</property>
+   <property key="DICT_VERSION">0.2.0</property>
    <property key="DICT_MENU_EXIT">И&amp;зход</property>
    <property key="DICT_MENU_FILE">&amp;Файл</property>
    <property key="DICT_MENU_PREF">&amp;Настройки</property>

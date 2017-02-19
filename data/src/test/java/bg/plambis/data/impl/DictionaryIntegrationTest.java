@@ -12,7 +12,7 @@ import bg.plambis.data.api.Word;
 public class DictionaryIntegrationTest {
 	private static final int DEAFULT_NUMBER_OF_WORDS = 10;
 	private static final String DB_DRIVER_STRING = "org.h2.Driver";
-	private static final String EXT_DB_URL_STRING = "jdbc:h2:./plambis/plambis";
+	private static final String EXT_DB_URL_STRING = "jdbc:h2:../plambis/plambis";
 	private static final String EXT_DB_USER_NAME = "plambis";
 	private static final String EXT_DB_PASSWORD = "plambis";
 

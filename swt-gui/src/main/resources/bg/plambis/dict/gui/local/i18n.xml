@@ -1,5 +1,5 @@
 <properties lang="en">
-   <property key="DICT_VERSION">0.1.9</property>
+   <property key="DICT_VERSION">0.2.0</property>
    <property key="DICT_MENU_EXIT">E&amp;xit</property>
    <property key="DICT_MENU_FILE">&amp;File</property>
    <property key="DICT_MENU_PREF">&amp;Preferences</property>
