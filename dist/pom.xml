@@ -140,7 +140,7 @@
 							<!-- base for relative paths in izpack descriptor -->
 							<baseDir>${izpack.staging}</baseDir>
 							<installFile>${basedir}/src/main/izpack/install.xml</installFile>
-							<finalName>bgEndDictionary_dist_${current.version}.jar</finalName>
+							<finalName>bgEndDictionary_dist_${current.version}</finalName>
 						</configuration>
 					</execution>
 				</executions>
