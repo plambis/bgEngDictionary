@@ -13,6 +13,7 @@
 		<!-- pack200 /-->
 		<javaversion>1.8</javaversion>
 		<requiresjdk>no</requiresjdk>
+		<run-privileged condition="izpack.windowsinstall.7|izpack.windowsinstall.8|izpack.windowsinstall.10" />
 	</info>
 
 	<!--  The gui preferences indication.    -->
