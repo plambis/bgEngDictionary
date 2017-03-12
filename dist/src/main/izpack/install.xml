@@ -70,18 +70,22 @@
 			</file-->
 			
 			<singlefile src="runDict.cmd" target="$INSTALL_PATH/bgEngDictionary.cmd">
-				<os family="windows" arch="amd64"/>				
+				<os family="windows"/>				
 			</singlefile>
 			<fileset dir="lib" targetdir="$INSTALL_PATH/lib">
 				<include name="org.eclipse.swt.win32.win32.x86_64-*.jar" />
 				<os family="windows" arch="amd64"/>
+			</fileset>
+			<fileset dir="lib" targetdir="$INSTALL_PATH/lib">
+				<include name="org.eclipse.swt.win32.win32.x86-*.jar" />
+				<os family="windows" arch="x86"/>
 			</fileset>
 			
 			<file src="runDict.sh" targetdir="$INSTALL_PATH/bgEngDictionary.sh">
 				<os family="unix" arch="x86"/>				
 			</file>
 			<fileset dir="lib" targetdir="$INSTALL_PATH/lib">
-				<include name="org.eclipse.swt.gtk.linux.x86*.jar" />
+				<include name="org.eclipse.swt.gtk.linux.x86-*.jar" />
 				<os family="unix" arch="x86"/>
 			</fileset>
 			<executable targetfile="$INSTALL_PATH/bgEngDictionary.sh" stage="never" failure="abort" keep="true">
@@ -92,7 +96,7 @@
 				<os family="unix" arch="amd64"/>				
 			</singlefile>
 			<fileset dir="lib" targetdir="$INSTALL_PATH/lib">
-				<include name="org.eclipse.swt.gtk.linux.x86_64*.jar" />
+				<include name="org.eclipse.swt.gtk.linux.x86_64-*.jar" />
 				<os family="unix" arch="amd64"/>
 			</fileset>
 			<executable targetfile="$INSTALL_PATH/bgEngDictionary.sh" stage="never" failure="ask" keep="true">
